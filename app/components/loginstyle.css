@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../static/font/NanumGothic.ttf');
+}
+body {
+  margin: 0;
+}
+
+#bg {
+  background-image: url("../static/img/wallpaper.jpg");
+  position: fixed;
+  top: 23px;
+  left: -5px;
+  width: 102%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(3px);
+}
+
+::placeholder {
+  color: gray;
+}
+
+.center-box {
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -234px;
+  background-color: #131313;
+  opacity: 90%;
+  border-radius: 15px;
+}
+
+#logocircle {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #a8a8a8;
+  line-height: 100px;
+  text-align: center;
+  font-family: 'NanumGothic', 'serif';
+}
+
+#logocircle img {
+  width: 90px;
+  height: 90px;
+  padding-top: 5px;
+}
+
+#head-box {
+  width: auto;
+  height: 200px;
+}
+
+#ErrorSpan {
+  position: absolute;
+  text-decoration: none;
+  font-size: 15px;
+  color: red;
+  width: 100%;
+  height: 20px;
+  top: 165px;
+  text-align: center;
+  font-family: 'NanumGothic', 'serif';
+}
+
+#login-box {
+  width: auto;
+  height: auto;
+}
+
+#login-box #loginsave {
+  margin-left: 50px;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+#id-box,
+#pass-box {
+  display: flex;
+  justify-content: center;
+  background-color: #1b1b1b;
+  opacity: 80%;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  border: 2px solid #3498DB;
+  transition: 0.25s;
+}
+
+#id-box:focus-within, #pass-box:focus-within {
+  border-color: #2ecc71;
+}
+
+#pass-box {
+  margin-top: 15px;
+}
+
+#pass-box #eye {
+  position: absolute;
+  outline: none;
+  left: 320px;
+  margin-top: 12px;
+  color: whitesmoke;
+}
+
+#idbox,
+#passbox {
+  background: transparent;
+  color: whitesmoke;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  font-family: 'NanumGothic', 'serif';
+}
+
+#savelabel {
+  color: whitesmoke;
+  text-align: right;
+  font-family: 'NanumGothic', 'serif';
+}
+
+#footer-box {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 178px;
+}
+
+#btnLogin {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+  outline: none;
+  font-family: 'NanumGothic', 'serif';
+
+}
+
+#imgLogin {
+  height: inherit;
+}
+
+#imgLogin:hover {
+  content: url('../static/img/login_button_enable.png');
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
